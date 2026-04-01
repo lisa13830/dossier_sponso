@@ -889,59 +889,164 @@ h1, h2, h3, .title-font {
       </div>
     </div>
 
-    <div class="motiv-grid">
-      <div class="motiv-box">
-        <div class="ico">🤝</div>
-        <div class="ttl">Aventure humaine</div>
-        <p class="desc">Sortir de notre zone de confort, s'adapter, faire preuve de résilience</p>
+    <!-- Grille combinée : motivations + valeurs — 2 colonnes égales, même hauteur -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; align-items: stretch;">
+
+      <!-- Colonne gauche : Nos motivations -->
+      <div style="display: flex; flex-direction: column; gap: 0;">
+        <div class="sh2" style="margin-bottom: 10px;">Nos motivations</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; flex: 1;">
+
+          <div class="motiv-box" style="text-align:left; display:flex; align-items:center; gap:12px; padding:13px 16px; flex:1;">
+            <span style="font-size:22px; flex-shrink:0;">🤝</span>
+            <div style="flex:1;">
+              <div class="ttl" style="font-size:12px;">Aventure humaine</div>
+              <p class="desc" style="font-size:10px; margin-top:2px;">Sortir de notre zone de confort, s'adapter, faire preuve de résilience</p>
+            </div>
+          </div>
+
+          <div class="motiv-box" style="text-align:left; display:flex; align-items:center; gap:12px; padding:13px 16px; flex:1;">
+            <span style="font-size:22px; flex-shrink:0;">🎓</span>
+            <div style="flex:1;">
+              <div class="ttl" style="font-size:12px;">Mission solidaire</div>
+              <p class="desc" style="font-size:10px; margin-top:2px;">Acheminer du matériel pour les enfants du Maroc via Enfants du Désert</p>
+            </div>
+          </div>
+
+          <div class="motiv-box" style="text-align:left; display:flex; align-items:center; gap:12px; padding:13px 16px; flex:1;">
+            <span style="font-size:22px; flex-shrink:0;">⚙️</span>
+            <div style="flex:1;">
+              <div class="ttl" style="font-size:12px;">Défi technique</div>
+              <p class="desc" style="font-size:10px; margin-top:2px;">Gérer l'imprévu, la fatigue et la pression dans des conditions extrêmes</p>
+            </div>
+          </div>
+
+          <div class="motiv-box" style="text-align:left; display:flex; align-items:center; gap:12px; padding:13px 16px; flex:1;">
+            <span style="font-size:22px; flex-shrink:0;">🗺️</span>
+            <div style="flex:1;">
+              <div class="ttl" style="font-size:12px;">Projet de A à Z</div>
+              <p class="desc" style="font-size:10px; margin-top:2px;">Sponsors, logistique, mécanique, communication - conduit de bout en bout</p>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="motiv-box">
-        <div class="ico">🎓</div>
-        <div class="ttl">Mission solidaire</div>
-        <p class="desc">Acheminer du matériel pour les enfants du Maroc via Enfants du Désert</p>
+
+      <!-- Colonne droite : Valeurs et engagements -->
+      <div style="display: flex; flex-direction: column; gap: 0;">
+        <div class="sh2" style="margin-bottom: 10px;">Valeurs et engagements</div>
+        <div style="display: flex; flex-direction: column; gap: 8px; flex: 1;">
+
+          <div class="val-item" style="flex:1; align-items:center;">
+            <div class="val-dot"></div>
+            <div class="val-ttl">Solidarité</div>
+            <div class="val-desc" style="flex:1;">Soutien aux populations défavorisées et engagement humanitaire concret</div>
+          </div>
+
+          <div class="val-item pink" style="flex:1; align-items:center;">
+            <div class="val-dot" style="background:var(--pink);"></div>
+            <div class="val-ttl">Dépassement de soi</div>
+            <div class="val-desc" style="flex:1;">Relever des défis techniques, physiques et mentaux dans des conditions exigeantes</div>
+          </div>
+
+          <div class="val-item green" style="flex:1; align-items:center;">
+            <div class="val-dot" style="background:#3a7a3a;"></div>
+            <div class="val-ttl">Resp. environnementale</div>
+            <div class="val-desc" style="flex:1;">Sensibilisation à la préservation de l'environnement et au développement durable</div>
+          </div>
+
+          <div class="val-item blue" style="flex:1; align-items:center;">
+            <div class="val-dot" style="background:#2E5B8A;"></div>
+            <div class="val-ttl">Engagement local</div>
+            <div class="val-desc" style="flex:1;">Représenter le sud de la France et valoriser le tissu économique de PACA</div>
+          </div>
+
+          <div class="val-item grey" style="flex:1; align-items:center;">
+            <div class="val-dot" style="background:#888;"></div>
+            <div class="val-ttl">Authenticité</div>
+            <div class="val-desc" style="flex:1;">Une aventure portée par deux sœurs avec un véhicule familial chargé d'histoire</div>
+          </div>
+
+        </div>
       </div>
-      <div class="motiv-box">
-        <div class="ico">⚙️</div>
-        <div class="ttl">Défi technique</div>
-        <p class="desc">Gérer l'imprévu, la fatigue et la pression dans des conditions extrêmes</p>
-      </div>
-      <div class="motiv-box">
-        <div class="ico">🗺️</div>
-        <div class="ttl">Projet de A à Z</div>
-        <p class="desc">Sponsors, logistique, mécanique, communication - conduit de bout en bout</p>
-      </div>
+
     </div>
 
     <div class="divider"></div>
 
-    <div class="row">
-      <div class="col">
-        <div class="sh2">Partenaires solidaires</div>
-        <div class="partners-row">
-          <div class="partner-item">
-            <span class="partner-ico">🏫</span>
-            <div><div class="partner-name">Enfants du Désert</div><div class="partner-desc">Accès à l'éducation pour les enfants du Grand Sud marocain</div></div>
+    <!-- Partenaires solidaires avec emplacements logos -->
+    <div class="sh2" style="margin-bottom: 12px;">Partenaires solidaires</div>
+    <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;">
+
+      <!-- Enfants du Désert -->
+      <div class="partner-item" style="justify-content: space-between;">
+        <div style="display:flex; align-items:center; gap:12px; flex:1;">
+          <span class="partner-ico">🏫</span>
+          <div>
+            <div class="partner-name">Enfants du Désert</div>
+            <div class="partner-desc">Accès à l'éducation pour les enfants du Grand Sud marocain</div>
           </div>
-          <div class="partner-item">
-            <span class="partner-ico">🌊</span>
-            <div><div class="partner-name">Surfrider Foundation Maroc</div><div class="partner-desc">Sensibilisation à la préservation de l'environnement</div></div>
-          </div>
-          <div class="partner-item">
-            <span class="partner-ico">🏥</span>
-            <div><div class="partner-name">Croix-Rouge française</div><div class="partner-desc">Collecte de dons sur le village-départ</div></div>
+        </div>
+        <!-- Emplacement logo -->
+        <div style="width:80px; height:48px; flex-shrink:0; border-radius:8px; border:2px dashed var(--grey2); background:var(--grey); display:flex; align-items:center; justify-content:center; margin-left:16px; overflow:hidden;">
+          <img src="photos/logo_enfants_du_desert.png" alt="Logo Enfants du Désert"
+               style="width:100%; height:100%; object-fit:contain;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; flex-direction:column; align-items:center; gap:2px; color:var(--muted); font-size:8px; font-weight:600; text-align:center; padding:4px;">
+            <span style="font-size:14px;">🏫</span>LOGO
           </div>
         </div>
       </div>
-      <!-- Photo humanitaire -->
-      <div class="col">
-        <div class="photo-slot" style="height: 100%; min-height: 200px;">
-          <img src="photos/humanitaire.png" alt="Distribution de matériel / enfants du Maroc">
-          <div class="slot-placeholder">
-            <div class="slot-ico">📷</div>
-            <div>photos/humanitaire.png</div>
-            <div class="slot-name">Distribution de matériel / enfants du Maroc</div>
+
+      <!-- Surfrider Foundation -->
+      <div class="partner-item" style="justify-content: space-between;">
+        <div style="display:flex; align-items:center; gap:12px; flex:1;">
+          <span class="partner-ico">🌊</span>
+          <div>
+            <div class="partner-name">Surfrider Foundation Maroc</div>
+            <div class="partner-desc">Sensibilisation à la préservation de l'environnement</div>
           </div>
         </div>
+        <!-- Emplacement logo -->
+        <div style="width:80px; height:48px; flex-shrink:0; border-radius:8px; border:2px dashed var(--grey2); background:var(--grey); display:flex; align-items:center; justify-content:center; margin-left:16px; overflow:hidden;">
+          <img src="photos/logo_surfrider.png" alt="Logo Surfrider Foundation"
+               style="width:100%; height:100%; object-fit:contain;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; flex-direction:column; align-items:center; gap:2px; color:var(--muted); font-size:8px; font-weight:600; text-align:center; padding:4px;">
+            <span style="font-size:14px;">🌊</span>LOGO
+          </div>
+        </div>
+      </div>
+
+      <!-- Croix-Rouge française -->
+      <div class="partner-item" style="justify-content: space-between;">
+        <div style="display:flex; align-items:center; gap:12px; flex:1;">
+          <span class="partner-ico">🏥</span>
+          <div>
+            <div class="partner-name">Croix-Rouge française</div>
+            <div class="partner-desc">Collecte de dons sur le village-départ</div>
+          </div>
+        </div>
+        <!-- Emplacement logo -->
+        <div style="width:80px; height:48px; flex-shrink:0; border-radius:8px; border:2px dashed var(--grey2); background:var(--grey); display:flex; align-items:center; justify-content:center; margin-left:16px; overflow:hidden;">
+          <img src="photos/logo_croix_rouge.png" alt="Logo Croix-Rouge française"
+               style="width:100%; height:100%; object-fit:contain;"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div style="display:none; flex-direction:column; align-items:center; gap:2px; color:var(--muted); font-size:8px; font-weight:600; text-align:center; padding:4px;">
+            <span style="font-size:14px;">🏥</span>LOGO
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Photo humanitaire -->
+    <div class="photo-slot" style="height: 180px; border-radius: 14px; overflow:hidden; border:none; box-shadow: 0 2px 12px rgba(26,16,16,0.1);">
+      <img src="photos/humanitaire.png" alt="Distribution de matériel / enfants du Maroc">
+      <div class="slot-placeholder">
+        <div class="slot-ico">📷</div>
+        <div>photos/humanitaire.png</div>
+        <div class="slot-name">Distribution de matériel / enfants du Maroc</div>
       </div>
     </div>
 
@@ -1076,35 +1181,18 @@ h1, h2, h3, .title-font {
       </div>
     </div>
 
-    <!-- Photo préparation + Valeurs côte à côte -->
+    <!-- Photo préparation pleine largeur -->
     <div class="divider"></div>
-    <div class="row" style="align-items: flex-start; gap: 28px;">
-
-      <!-- Image 4:3 préparation -->
-      <div class="col" style="flex: 0 0 auto; width: 340px;">
-        <div class="sh2" style="margin-bottom: 12px;">Préparation &amp; Réparation</div>
-        <div class="photo-slot" style="aspect-ratio: 4/3; border-radius: 16px; overflow: hidden; border: none; box-shadow: 0 4px 20px rgba(26,16,16,0.12);">
-          <img src="photos/preparation_generale.png" alt="Préparation et réparation de la 4L">
-          <div class="slot-placeholder">
-            <div class="slot-ico">🔧</div>
-            <div>photos/preparation_generale.png</div>
-            <div class="slot-name">Photo générale - Préparation &amp; réparation</div>
-          </div>
+    <div>
+      <div class="sh2" style="margin-bottom: 12px;">Préparation &amp; Réparation</div>
+      <div class="photo-slot" style="aspect-ratio: 16/7; border-radius: 16px; overflow: hidden; border: none; box-shadow: 0 4px 20px rgba(26,16,16,0.12);">
+        <img src="photos/preparation_generale.png" alt="Préparation et réparation de la 4L">
+        <div class="slot-placeholder">
+          <div class="slot-ico">🔧</div>
+          <div>photos/preparation_generale.png</div>
+          <div class="slot-name">Photo générale - Préparation &amp; réparation</div>
         </div>
       </div>
-
-      <!-- Valeurs -->
-      <div class="col">
-        <div class="sh2">Valeurs et engagements</div>
-        <div class="val-list">
-          <div class="val-item">        <div class="val-dot"></div>                                        <div class="val-ttl">Solidarité</div>        <div class="val-desc">Soutien aux populations défavorisées et engagement humanitaire concret</div></div>
-          <div class="val-item pink">   <div class="val-dot" style="background:var(--pink);"></div>        <div class="val-ttl">Dépassement de soi</div><div class="val-desc">Relever des défis techniques, physiques et mentaux dans des conditions exigeantes</div></div>
-          <div class="val-item green">  <div class="val-dot" style="background:#3a7a3a;"></div>            <div class="val-ttl">Resp. environnementale</div><div class="val-desc">Sensibilisation à la préservation de l'environnement et au développement durable</div></div>
-          <div class="val-item blue">   <div class="val-dot" style="background:#2E5B8A;"></div>            <div class="val-ttl">Engagement local</div>  <div class="val-desc">Représenter le sud de la France et valoriser le tissu économique de PACA</div></div>
-          <div class="val-item grey">   <div class="val-dot" style="background:#888;"></div>               <div class="val-ttl">Authenticité</div>      <div class="val-desc">Une aventure portée par deux sœurs avec un véhicule familial chargé d'histoire</div></div>
-        </div>
-      </div>
-
     </div>
 
   </div>
@@ -1366,7 +1454,7 @@ h1, h2, h3, .title-font {
     <div class="contact-items">
       <div class="contact-item">
         <div class="contact-ico">📧</div>
-        <div><div class="contact-lbl">Email</div><div class="contact-val"><a href="mailto:4l2cigales@gmail.com">4l2cigales@gmail.com</a></div></div>
+        <div><div class="contact-lbl">Email</div><div class="contact-val"><a href="/cdn-cgi/l/email-protection#5c68306e3f353b3d30392f1c3b313d3530723f3331"><span class="__cf_email__" data-cfemail="8db9e1bfeee4eaece1e8fecdeae0ece4e1a3eee2e0">[email&#160;protected]</span></a></div></div>
       </div>
       <div class="contact-item">
         <div class="contact-ico">📱</div>
@@ -1378,9 +1466,4 @@ h1, h2, h3, .title-font {
       </div>
       <div class="contact-item">
         <div class="contact-ico">🌐</div>
-        <div><div class="contact-lbl">Réseaux sociaux</div><div class="contact-val">Instagram &nbsp;·&nbsp; Facebook &nbsp;·&nbsp; LinkedIn</div></div>
-      </div>
-    </div>
-
-    <div class=
-
+        <div><div class="contact-lbl">Réseaux sociaux</div>
