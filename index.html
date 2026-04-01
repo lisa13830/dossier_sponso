@@ -720,6 +720,109 @@ h1, h2, h3, .title-font {
 }
 .schema-wrap img { max-width: 100%; border-radius: 10px; }
 
+/* ============================================================
+   RESPONSIVE MOBILE — empilement complet sur smartphone
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Navigation latérale — cachée sur mobile */
+  .sidenav { display: none; }
+
+  /* Section headers */
+  .section-header { padding: 32px 20px 28px; }
+  .section-title   { font-size: 32px; }
+  .section-body    { padding: 28px 20px; }
+
+  /* Cover */
+  .cover-content { padding: 24px 20px 0; }
+  .cover-team-bar {
+    padding: 16px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .cover-team-name { font-size: 22px; }
+
+  /* Rows → colonne */
+  .row { flex-direction: column; gap: 16px; }
+  .col, .col2, .col3 { flex: unset; width: 100%; }
+
+  /* Grilles 4 col → 2 col */
+  .motiv-grid      { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .stats-row       { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .placement-grid  { grid-template-columns: 1fr 1fr; gap: 8px; }
+
+  /* Grilles 3 col → 1 col */
+  .offres-row { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Grilles 2 col → 1 col */
+  .fin-grid   { grid-template-columns: 1fr; gap: 10px; }
+  .benef-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Support cards (grille 2 col → 1 col) */
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  /* Grille motivations + valeurs (2 col inline) → 1 col */
+  div[style*="grid-template-columns: 1fr 1fr; gap: 20px"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  /* stat-wide span complet */
+  .stat-wide { grid-column: span 2; }
+
+  /* Route bar → empilement */
+  .route-bar {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px;
+    justify-content: center;
+  }
+  .route-info { margin-left: 0; white-space: normal; text-align: center; }
+  .route-line { width: 100%; flex: unset; }
+
+  /* Budget rows */
+  .bgt-row { flex-wrap: wrap; gap: 8px; }
+  .bgt-bar-wrap { flex: 1 1 100%; }
+  .bgt-amt { width: auto; }
+
+  /* val-item — label + texte sur mobile */
+  .val-ttl { flex: 0 0 auto; min-width: unset; }
+
+  /* Contact page */
+  #contact { padding: 40px 20px; text-align: center; }
+  .contact-item { flex-direction: column; text-align: center; align-items: center; gap: 8px; }
+  .contact-teamname { font-size: 28px !important; }
+
+  /* Photo slots */
+  .profile-photo { min-height: 180px; }
+
+  /* Chips de placement */
+  .zone-chip { font-size: 9px; padding: 8px 4px; }
+
+  /* Section body padding réduit */
+  .section-body .divider { margin: 20px 0; }
+
+  /* Taille de texte générale */
+  .body-txt { font-size: 12.5px; }
+
+  /* Objective banner */
+  .obj-banner { padding: 14px 16px; }
+}
+
+/* Très petits écrans */
+@media (max-width: 400px) {
+  .motiv-grid  { grid-template-columns: 1fr; }
+  .stats-row   { grid-template-columns: 1fr; }
+  .section-title { font-size: 26px; }
+  .cover-team-name { font-size: 18px; }
+}
+
 </style>
 </head>
 
